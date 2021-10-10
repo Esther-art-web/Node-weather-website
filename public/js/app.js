@@ -3,7 +3,7 @@ const search = document.querySelector('input');
 const messageOne = document.querySelector("#message-1");
 const messageTwo = document.querySelector("#message-2");
 
-console.log("Client side javascript file is loaded!");
+
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     response.json().then((data) => {
 //         console.log(data);
@@ -29,7 +29,5 @@ weatherForm.addEventListener('submit', (e) => {
         messageTwo.textContent = data.forecast;
     })
 }) 
-
-    
 })
 ''
