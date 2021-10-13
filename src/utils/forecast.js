@@ -8,7 +8,7 @@ const forecast =(lat, long, callback)=>{
         } else if (body.error){
             callback("No matching result. Try other searches!", undefined);
         } else{
-            callback(undefined, body.current.condition.text + ". It is currently " + body.current.temp_c +" degrees out. There is a "+ body.current.precip_mm +"% chance of rain"); 
+            callback(undefined, body.current.condition.text + ". It is currently " + body.current.temp_c +" degrees out with UV index of " + body.current.uv + ". There is a "+ body.current.precip_mm +"% chance of rain"); 
         }
     })
 }
